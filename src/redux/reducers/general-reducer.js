@@ -62,18 +62,18 @@ export const GeneralReducer = (state = initialState, action) => {
                         current: [protocol.current],
                         voltage: [protocol.voltage],
                         frequency: [protocol.frequency],
-                        apparent: [protocol.apparent],
-                        active: [protocol.active],
-                        reactive: [protocol.reactive]
+                        // apparent: [protocol.apparent],
+                        // active: [protocol.active],
+                        // reactive: [protocol.reactive]
                     }
                 }
                 else {
                     devices[mac].current.push(protocol.current)
                     devices[mac].voltage.push(protocol.voltage)
                     devices[mac].frequency.push(protocol.frequency)
-                    devices[mac].apparent.push(protocol.apparent)
-                    devices[mac].active.push(protocol.active)
-                    devices[mac].reactive.push(protocol.reactive)
+                    // devices[mac].apparent.push(protocol.apparent)
+                    // devices[mac].active.push(protocol.active)
+                    // devices[mac].reactive.push(protocol.reactive)
 
                     if (devices[mac].current.length >= 10) {
                         for (var key in devices[mac])

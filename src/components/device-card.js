@@ -6,7 +6,7 @@ import { Grid } from '@material-ui/core'
 
 const DeviceCard = (props) => {
     return (
-        <div>
+        <>
             <p align='center' style={{ color: '#FFF' }} onClick={props.onClick} >Device - {props.mac}</p>
             <Grid container xs={12}>
                 {Object.keys(props.dev).map(key => (
@@ -17,7 +17,7 @@ const DeviceCard = (props) => {
                     </Grid>
                 ))}
             </Grid>
-        </div>
+        </>
     )
 }
 
